@@ -1,0 +1,10 @@
+# Wortell Browser Protect — threat-intel blocklist
+# One entry per line: a bare hostname (bad.example.com) or a full URL
+# (https://bad.example.com/login). Both are normalized to the hostname; matching
+# is host/domain-level. Lines starting with # are comments.
+#
+# Only add CONFIRMED malicious hosts — a wrong entry blocks a real site for every
+# client. Clients refresh hourly and fail open if this file is unreachable.
+
+# --- test entry (benign; the EICAR test/awareness domain) ---
+www.eicar.org
