@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacybeleid — Wortell Browser Protect</title>
+  <meta name="description" content="Privacybeleid van de Wortell Browser Protect browser-extensie." />
+  <style>
+    :root { --bg:#0c0116; --surface:#16091f; --text:#fff; --muted:#9a93a8; --accent:#4cd275; --border:rgba(255,255,255,.08); }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:'Campton',Helvetica,Arial,sans-serif; line-height:1.65; }
+    .wrap { max-width:720px; margin:0 auto; padding:56px 22px 72px; }
+    .hd { display:flex; align-items:center; gap:14px; margin-bottom:6px; }
+    h1 { font-size:27px; letter-spacing:-.02em; margin:0; }
+    .sub { color:var(--muted); font-size:14px; margin:4px 0 30px 50px; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:8px 24px; }
+    .lead { font-size:15px; }
+    ul { padding-left:20px; }
+    li { margin:12px 0; font-size:15px; }
+    .accent { color:var(--accent); font-weight:700; }
+    a { color:var(--accent); }
+    .foot { color:var(--muted); font-size:13px; margin-top:28px; }
+    .wm { color:var(--accent); font-weight:800; letter-spacing:-.02em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hd">
+      <svg viewBox="0 0 64 72" width="36" height="40" aria-hidden="true">
+        <path d="M32 3 L59 13 L59 38 C59 54 47 65 32 69 C17 65 5 54 5 38 L5 13 Z" fill="#4cd275"/>
+        <path d="M17 27 L24 47 L32 35 L40 47 L47 27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h1>Privacybeleid</h1>
+    </div>
+    <p class="sub">Wortell Browser Protect</p>
+
+    <div class="card">
+      <p class="lead">Wortell Browser Protect analyseert pagina's <span class="accent">volledig lokaal</span> in je browser om nep-Microsoft-loginpagina's te detecteren.</p>
+      <ul>
+        <li>We verzamelen, bewaren of versturen <strong>geen</strong> bezochte URL's, pagina-inhoud, wachtwoorden of persoonsgegevens.</li>
+        <li>De extensie maakt één directe netwerkrequest: het ophalen van een <strong>publieke, statische blocklist</strong> (tekstbestand) van GitHub. Hierbij wordt niet meegestuurd welke sites je bezoekt; de lijst wordt gedownload en lokaal vergeleken.</li>
+        <li>Een lokale historie van geblokkeerde pagina's wordt alleen op je apparaat bewaard en verlaat het apparaat niet.</li>
+        <li>Je <strong>instellingen</strong> (de toggles, gekozen taal en weergave) worden bewaard in de opslag van de extensie. Deze kunnen via de <strong>ingebouwde sync van je browser</strong> (je Microsoft-/Google-browserprofiel) tussen je eigen apparaten worden gesynchroniseerd — dit zijn alleen voorkeuren, <strong>nooit</strong> bezochte sites, pagina-inhoud of wachtwoorden, en er gaat niets naar Wortell.</li>
+      </ul>
+      <p>Vragen of meldingen: <a href="mailto:security@wortell.nl">security@wortell.nl</a></p>
+    </div>
+
+    <p class="foot">🛡️ <span class="wm">wortell</span> Enterprise Security houdt je veilig</p>
+  </div>
+</body>
+</html>
