@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign in to your account</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    /* Safe, static review/QA page. No credentials are collected, stored or
+       transmitted — the form does nothing (onsubmit returns false). Its only
+       purpose is to let a reviewer see Wortell Browser Protect block a
+       Microsoft-login lookalike that is NOT hosted on a Microsoft domain. */
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Segoe UI',Tahoma,Arial,sans-serif; background:#fff; }
+    .bg { position:fixed; inset:0; background:#f2f2f2; }
+    .review-note {
+      position:fixed; top:0; left:0; right:0; z-index:10;
+      background:#fff4ce; color:#5c4500; border-bottom:1px solid #e0cf8a;
+      font-size:13px; text-align:center; padding:8px 14px; line-height:1.4;
+    }
+    .card {
+      position:relative; z-index:1; width:440px; max-width:calc(100% - 24px);
+      margin:120px auto 0; background:#fff; padding:44px;
+      box-shadow:0 2px 6px rgba(0,0,0,.2);
+    }
+    .logo { display:flex; align-items:center; gap:8px; margin-bottom:16px; }
+    .logo span { font-size:15px; color:#1b1b1b; }
+    h1 { font-size:24px; font-weight:600; color:#1b1b1b; margin:0 0 16px; }
+    label { display:block; font-size:13px; color:#1b1b1b; margin:14px 0 4px; }
+    input[type=email], input[type=password] {
+      width:100%; padding:6px 10px; font-size:15px;
+      border:none; border-bottom:1px solid #666; outline:none;
+    }
+    .row { display:flex; justify-content:flex-end; margin-top:24px; }
+    #idSIButton9 {
+      background:#0067b8; color:#fff; border:none; min-width:108px;
+      height:32px; font-size:15px; cursor:pointer;
+    }
+    .links { margin-top:20px; font-size:13px; }
+    .links a { color:#0067b8; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="review-note">
+    <strong>Wortell Browser Protect — reviewer test page.</strong>
+    This is a benign static mock of a Microsoft sign-in page hosted on a
+    non-Microsoft domain. No data is collected or submitted. With the extension
+    installed it should be blocked by a full-screen overlay.
+  </div>
+
+  <div class="card">
+    <div class="logo">
+      <svg width="20" height="20" viewBox="0 0 23 23" aria-hidden="true">
+        <rect x="1"  y="1"  width="10" height="10" fill="#f25022"/>
+        <rect x="12" y="1"  width="10" height="10" fill="#7fba00"/>
+        <rect x="1"  y="12" width="10" height="10" fill="#00a4ef"/>
+        <rect x="12" y="12" width="10" height="10" fill="#ffb900"/>
+      </svg>
+      <span>Microsoft</span>
+    </div>
+
+    <h1>Sign in</h1>
+
+    <form onsubmit="return false;" autocomplete="off">
+      <label for="i0116">Email, phone, or Skype</label>
+      <input type="email" id="i0116" name="loginfmt" />
+
+      <label for="i0118">Password</label>
+      <input type="password" id="i0118" name="passwd" />
+
+      <div class="row">
+        <button type="submit" id="idSIButton9">Sign in</button>
+      </div>
+    </form>
+
+    <div class="links">
+      <a href="#">Can't access your account?</a>
+    </div>
+  </div>
+</body>
+</html>
